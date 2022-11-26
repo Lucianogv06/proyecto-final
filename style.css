@@ -17,6 +17,12 @@ a{
     font-weight: 500;
 }
 
+a:hover{
+    background-color: goldenrod;
+    transition: 0.5s;
+    padding: 7px;
+    border: none;
+}
 
 .cabecera{
     background-color: #033b65;
@@ -113,7 +119,17 @@ a{
     margin: 0 50px;
     border-radius: 15px;
     grid-area: img;
+    transition: 3s;
 }
+
+.imgarg:hover{
+    height: 100%;
+    width: 95%;
+    margin: 0 10px;
+    border-radius: 15px;
+    grid-area: img;
+}
+
 
 /* Estilo scaloneta */
 
@@ -143,6 +159,25 @@ a{
     margin-right: 40px;
     padding-bottom: 50px;
     color: white;
+}
+
+#scaloneta .titulon{
+    font-size: 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    animation: cambiar 7s infinite;
+}
+
+@keyframes cambiar{
+    0%{background-color: white;
+       color: black; }
+
+    50%{background-color: black;
+    color: white; }
+
+    100%{background-color: white;
+        color: black;}
+
 }
 
 iframe{
