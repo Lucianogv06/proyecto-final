@@ -302,37 +302,20 @@ iframe{
 /* Estilo footer */
 
 footer{
-    background-color: #033b65;
-    display: flex;
-    color: white;
-    justify-content: center;
-    /* grid-column: span 2; */
-    grid-area: footer;
+    padding: 50px;
 }
 
-.pie a{
-    background-color: #033b65;
-    border: none;
-}
-
-.pie span{
-    height: 50px;
-}
-
-.pie p{
-    font-weight: 400;
-    font-size: 55px;
+.pie{
+    grid-column: span 2;
+    margin-top: 20px;
     align-items: center;
-    margin: 10px;
 }
 
-.pie img{
-   width: 40px; 
-   height: 40px; 
-   margin: 0 30px;
+.pie a, .pie a:hover{
+    border: none;
+    padding: 10px;
+    background: none;
 }
-
-
 
 @media screen and (max-width: 768px){
     #contenedor{
