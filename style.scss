@@ -194,23 +194,29 @@ iframe{
 
 /* Estilo mundiales */
 
+$estilos:(
+    color: #033b65,
+    medida: 4px,
+);
+
 #mundiales{
     background: linear-gradient(180deg, rgba(255,255,255,1) 22%, rgba(255,242,208,1) 86%);
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px 0;
+    
 }
 
 .tabla-mun{
     width: 40%;
-    border: 3px #033b65 solid;
-    color: #033b65;
+    border: 5px map-get($map: $estilos, $key: color ) solid;
+    color: map-get($map: $estilos, $key: color );
     border-collapse: collapse;
 }
 
 .tabla-mun td, th{
-    border: solid #033b65 4px;
+    border: solid map-get($map: $estilos, $key: color ) map-get($map: $estilos, $key: medida) ;
 
 }
 
@@ -226,10 +232,21 @@ iframe{
     margin-bottom: 20px;
 }
 
-#mundiales .div-m img{
+@mixin estile($bordec, $sombra, $size){
+    border: solid $bordec $size;
+    box-shadow: $sombra 0px 0px 0px $size;
+}
+
+.img22{
     height: 200px;
     width: 350px;
-    border-radius: 5px;
+    border-radius: map-get($map: $estilos, $key: medida);
+    @include estile(goldenrod,black ,4px )
+}
+
+.img86 , .img78{
+    @extend .img22;
+    @include estile( darkgreen ,black ,3px )
 }
 
 /* Estilo copa am */

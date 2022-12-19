@@ -189,7 +189,7 @@ iframe {
 
 .tabla-mun {
   width: 40%;
-  border: 3px #033b65 solid;
+  border: 5px #033b65 solid;
   color: #033b65;
   border-collapse: collapse;
 }
@@ -211,10 +211,17 @@ iframe {
   margin-bottom: 20px;
 }
 
-#mundiales .div-m img {
+.img22, .img86, .img78 {
   height: 200px;
   width: 350px;
-  border-radius: 5px;
+  border-radius: 4px;
+  border: solid goldenrod 4px;
+  box-shadow: black 0px 0px 0px 4px;
+}
+
+.img86, .img78 {
+  border: solid darkgreen 3px;
+  box-shadow: black 0px 0px 0px 3px;
 }
 
 /* Estilo copa am */
