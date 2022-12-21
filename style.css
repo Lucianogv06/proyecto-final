@@ -30,8 +30,6 @@ a:hover {
   align-items: center;
   position: relative;
   justify-content: center;
-  /* grid-column-start: 1;
-  grid-column-end: -1; */
   grid-area: cabecera;
 }
 
@@ -87,7 +85,6 @@ a.nav-link {
 }
 
 #informacion {
-  /* grid-column: span 2; */
   grid-area: informacion;
 }
 
@@ -388,11 +385,19 @@ footer {
   iframe {
     width: 100%;
   }
-  .pie {
-    margin-top: 20px;
-  }
   .scaloneta div, iframe {
     margin: 0;
+  }
+  #americas {
+    display: block;
+    justify-content: center;
+  }
+  #americas ul {
+    margin: auto;
+  }
+  #camisetas {
+    display: block;
+    padding-bottom: 10px;
   }
 }
 
