@@ -399,6 +399,21 @@ footer {
     display: block;
     padding-bottom: 10px;
   }
+  #mundiales {
+    display: block;
+    width: 100%;
+    justify-items: center;
+  }
+  #mundiales .div-m, #mundiales table {
+    width: 100%;
+    justify-content: center;
+  }
+  .pie {
+    justify-content: center;
+  }
+  .pie footer {
+    padding: 5px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

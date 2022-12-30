@@ -456,4 +456,20 @@ footer{
         padding-bottom: 10px;
     }
 
+    #mundiales{
+        display: block;
+        width: 100%;
+        justify-items: center;
+            .div-m, table{
+                width: 100%;
+                justify-content: center;
+            }
+    }
+
+    .pie{
+        justify-content: center;
+        footer {
+            padding: 5px;
+        }
+    }
 }
